@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Bookshelf - The Digital Bookstore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="website images/logo1.png">
+<p>The Digital Bookstore</p>
+</div>
+
+<nav>
+<a href="index.html">Home 🏡</a>
+<a href="bookshelf.html">Bookshelf 📖</a>
+<a href="cart.html">Cart 🛒</a>
+<a href="about.html">About ⓘ</a>
+</nav>
+
+<div class="header-space"></div>
+
+</header>
+
+
+<section class="section2">
+
+<h1>BOOKSHELF</h1>
+<hr width="1000" color="#5a364f">
+<h2>Select a Genre</h2>
+
+<div class="genre-map">
+<img src="website images/bookshelf.png" usemap="#genre-map" width="650" >
+
+<map name="genre-map">
+<area shape="rect" coords="0,0,325,156" href="#"
+onclick="showGenre('thriller'); return false;">
+
+<area shape="rect" coords="325,0,650,156" href="#"
+onclick="showGenre('con-fiction'); return false;">
+
+<area shape="rect" coords="0,156,325,312" href="#"
+onclick="showGenre('romance'); return false;">
+
+<area shape="rect" coords="325,156,650,312" href="#"
+onclick="showGenre('hist-fiction'); return false;">
+</map>
+
+</div>
+</section>
+
+
+<section id="thriller" class="section2 genre-section">
+
+<h2>Mystery/Thriller Books</h2>
+<div class="book-grid">
+      <div class="book-card">
+           <div class="card-inner">
+             <div class="card-front">
+                          <img src="website images/book1.jpg">
+                          <h3>The Silent Patient</h3>
+                           <p>Alex Michaelides</p>
+                           <p>₹ 200 /- </p>
+             </div>
+             <div class="card-back">
+             <p>A psychological thriller about a woman who refuses to speak after     committing a crime.</p>
+             <button  onclick="alert('Book added to cart!')">Add to Cart</button>
+                                <button onclick="buyNow(this)">Buy Now</button>
+             </div>
+           </div>
+      </div>
+
+
+     <div class="book-card">
+           <div class="card-inner">
+             <div class="card-front">
+                          <img src="website images/book3.jpg">
+                          <h3>The Inmate</h3>
+                          <p>Freida McFadden</p>
+                           <p>₹ 150 /- </p>
+             </div>
+             <div class="card-back">
+             <p>A psychological thriller about a nurse who starts working at a prison only to discover that one of the inmates is her dangerous ex-boyfriend who knows her darkest secret.</p>
+              <button  onclick="alert('Book added to cart!')">Add to Cart</button>
+                                <button onclick="buyNow(this)">Buy Now</button>
+             </div>
+           </div>
+      </div>
+
+      <div class="book-card">
+           <div class="card-inner">
+             <div class="card-front">
+                          <img src="website images/book4.jpg">
+                          <h3>The Girl In The Glass Case</h3>
+                          <p>Devashish Sardana</p>
+                          <p>₹ 250 /- </p>
+             </div>
+             <div class="card-back">
+             <p>A police officer chases a serial killer known as the Doll Maker, who kidnaps children and displays them in glass cases after killing them, amidst a rivalry with another notorious murderer, the Clipper.</p>
+              <button  onclick="alert('Book added to cart!')">Add to Cart</button>
+                                <button onclick="buyNow(this)">Buy Now</button>
+             </div>
+           </div>
+      </div>
+</div><br>
+<p><a href="#top" class="btn">Go to Bookshelf</a></p>
+</section>
+
+
+
+
+<section id="con-fiction" class="section2 genre-section">
+
+<h2>Contemporary Fiction Books</h2>
+
+<div class="book-grid">
+      <div class="book-card">
+           <div class="card-inner">
+             <div class="card-front">
+                          <img src="website images/book5.jpg">
+                          <h3>The 3 Mistakes of My Life</h3>
+                          <p>Chetan Bhagat</p>
+                          <p>₹ 100 /- </p>
+             </div>
+             <div class="card-back">
+             <p>Three friends in Ahmedabad pursue dreams amid cricket, business, and life’s challenges, discovering the strength of friendship.</p>
+             <button  onclick="alert('Book added to cart!')">Add to Cart</button>
+                                <button onclick="buyNow(this)">Buy Now</button>
+             </div>
+           </div>
+      </div>
+</div><br>
+<p><a href="#top" class="btn">Go to Bookshelf</a></p>
+
+</section>
+
+
+
+
+<section id="romance" class="section2 genre-section">
+
+<h2>Romance Books</h2>
+
+
+<div class="book-grid">
+      <div class="book-card">
+           <div class="card-inner">
+             <div class="card-front">
+                          <img src="website images/book14.jpg">
+                          <h3>Somebody That i used to know</h3>
+                          <p>Himani Desai</p>
+                           <p>₹ 180 /- </p>
+             </div>
+             <div class="card-back">
+             <p>A romantic drama following Varun and Anaya, who reunite after four years of separation only to find themselves as antagonists—he, an army officer, and she, entangled in a criminal investigation, questioning if their love can survive conflicting roles.</p>
+              <button  onclick="alert('Book added to cart!')">Add to Cart</button>
+                                <button onclick="buyNow(this)">Buy Now</button>
+             </div>
+           </div>
+      </div>
+
+
+     
+      
+</div><br>
+<p><a href="#top" class="btn">Go to Bookshelf</a></p>
+</section>
+
+<section id="hist-fiction" class="section2 genre-section">
+
+<h2>Historical Fiction Books</h2>
+<div class="book-grid">
+      <div class="book-card">
+           <div class="card-inner">
+             <div class="card-front">
+                          <img src="website images/book2.jpg">
+                          <h3>A Shimla Affair</h3>
+                          <p>Srishti Chaudhary</p>
+                           <p>₹ 180 /- </p>
+             </div>
+             <div class="card-back">
+             <p>A Shimla Affair follows the story of three women attempting to change the course of Indian independence—for love, duty, and revenge.</p>
+              <button  onclick="alert('Book added to cart!')">Add to Cart</button>
+                                <button onclick="buyNow(this)">Buy Now</button>
+             </div>
+           </div>
+      </div>
+
+</div><br>
+<p><a href="#top" class="btn">Go to Bookshelf</a></p>
+</section>
+
+<footer>
+<p>© 2026 The Digital Bookstore</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

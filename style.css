@@ -1,0 +1,344 @@
+body{
+margin:0;
+font-family:'Playfair Display';
+background:#f5f1ea;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:#5a364f;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#f5f1ea;
+display:flex;
+align-items:center;
+}
+
+.logo img{
+height:50px;
+width:auto;
+max-width:60px;
+margin-right:10px;
+}
+
+nav a{
+margin:10px;
+font-size:20px;
+text-decoration:none;
+color:#f5f1ea;
+font-weight:bold;
+}
+nav a:active{
+    text-decoration: underline;
+}
+
+.search-box input{
+font-size:12px;
+padding:5px 10px;
+background:#f5f1ea;
+color:#3e2233;
+border:double
+}
+
+.search-box button{
+font-size:15px;
+padding:5px 10px;
+background:#f5f1ea;
+color:#3e2233;
+border:double;
+}
+
+.section1{
+height:600px;
+background-image:url("website images/bookstore.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box{
+background:#ffffffbf;
+font-size:18px;
+color:#3e2233;
+padding:30px;
+border-radius:12px;
+text-align:center;
+max-width:500px;
+box-shadow:0 8px 25px #00000033;
+}
+
+.btn{
+background:#5a364f;
+padding:10px 20px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.btn:hover {
+background: #7b4f6a;
+}
+
+
+.section2{
+color:#5a364f;
+padding:50px;
+text-align:center;
+}
+
+.book-grid{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:50px;
+}
+
+.book-card{
+width:200px;
+height:300px;
+perspective:1000px;
+}
+
+.card-inner{
+position:relative;
+width:100%;
+height:100%;
+transition:transform 0.8s;
+transform-style:preserve-3d;
+}
+
+.book-card:hover .card-inner{
+transform:rotateY(180deg);
+}
+
+.card-front, .card-back{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+background:#f3eef4;
+border-radius:10px;
+box-shadow:0 4px 10px #00000033;
+padding:10px;
+font-size:15px;
+display:flex;
+flex-direction:column;
+color:#5a364f;
+box-sizing:border-box;
+}
+
+.card-front img{
+width:100%;
+height:200px;
+object-fit:contain;
+border-radius:6px;
+}
+
+.card-front h3{
+font-size:18px;
+margin:8px 0 4px 0;
+text-align:center;
+height:50px;
+}
+
+.card-front p{
+font-size:15px;
+margin:0;
+text-align:center;
+}
+
+.card-back{
+transform:rotateY(180deg);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.card-back button{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-top:10px;
+background:#6c4b71;
+color:#f0eee9;
+border:none;
+padding:8px 12px;
+border-radius:4px;
+cursor:pointer;
+}
+
+
+.section3{
+background:#6c4b71;
+color:#f0eee9;
+padding:40px;
+text-align:center;
+font-size:20px;
+animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+.section4{
+background:#f0eee9;
+color:#6c4b71;
+padding:40px;
+text-align:center;
+font-size:20px;
+}
+
+.section4 button{
+background:#6c4b71;
+color:#f0eee9;
+border:none;
+padding:8px;
+border-radius:5px;
+}
+
+area:focus {
+    outline: none;
+}
+
+
+footer{
+background:#5a364f;
+color:#c6c4ce;
+text-align:center;
+padding:15px;
+}
+
+.genre-section{
+display:none;
+margin-top:40px;
+}
+
+.genre-map{
+text-align:center;
+margin-top:30px;
+}
+
+
+.about {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #ffffffbf;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #00000033;
+    color: #5a364f;
+    text-align: center;
+    font-size: 18px;
+}
+
+.about img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.about-row form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.about-row label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.about-row button {
+    background: #5a364f;
+    color: #f0eee9;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.about-row button:hover {
+    background: #7b4f6a;
+}
+
+.about-row {
+    gap: 30px;
+display:flex;
+    margin-top: 30px;
+}
+
+
+.about-left, .about-right {
+   padding: 25px;
+    background: #ffffffbf;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #00000033;
+    color: #5a364f;
+    text-align: center;
+    font-size: 18px;
+    flex: 1;
+    min-width: 300px; 
+    text-align: left; 
+margin-bottom:15px;
+}
+
+
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cartTable th,
+#cartTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#cartTable input[type=number] {
+    width: 50px;
+}
+
+
+header nav a.active {
+    text-decoration: underline;
+}
+
+main{
+font-size:18px;
+color:#3e2233;
+text-align:center;
+margin-bottom:10px;
+}
+
+main button,.button{
+background:#5a364f;
+padding:10px 20px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+ border: none; 
+font-size:15px;
+}
+
+button:hover,.button:hover{
+    background: #7b4f6a;
+}
